@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByProjectEqualsOrJobEqualsOrContextEqualsOrOriginEqualsOrMessageEqualsOrCodeEqualsOrTypeEqualsOrPriorityEqualsOrMomentBetween" id="ff_org_easybi_model_Log" path="/logs" z="ryiOwjTkXxyJeGaN3+gk4aL3EbA=">
+        <field:input disableFormBinding="true" field="project" id="f_org_easybi_model_Log_project" max="50" required="true" z="hPYWM3NfEw+B2h3RG5yuQW01vxo="/>
+        <field:input disableFormBinding="true" field="job" id="f_org_easybi_model_Log_job" max="255" required="true" z="tgXiuQ1JYLdfWDoQKDAO8h5CAeA="/>
+        <field:input disableFormBinding="true" field="context" id="f_org_easybi_model_Log_context" max="50" required="true" z="f2baymZ67xhiCxNx7l5f6hVmUHU="/>
+        <field:input disableFormBinding="true" field="origin" id="f_org_easybi_model_Log_origin" max="255" required="true" z="KndhkZXtz7eKfmIOl4est0K8joo="/>
+        <field:input disableFormBinding="true" field="message" id="f_org_easybi_model_Log_message" max="255" required="true" z="Ix6TQDGBX0ZBNOB+E5rSzl2+ARo="/>
+        <field:input disableFormBinding="true" field="code" id="f_org_easybi_model_Log_code" required="true" validationMessageCode="field_invalid_integer" z="kKlwTOb8XeAGy60ZQtycPN4RzTg="/>
+        <field:input disableFormBinding="true" field="type" id="f_org_easybi_model_Log_type" max="255" required="true" z="tkdkRPbM/Uconjmz4GRz4abBnXA="/>
+        <field:input disableFormBinding="true" field="priority" id="f_org_easybi_model_Log_priority" required="true" validationMessageCode="field_invalid_integer" z="U6fnUUIN85uk0i6WL8uj1dMOX0I="/>
+        <field:datetime dateTimePattern="${log_moment_date_format}" disableFormBinding="true" field="minMoment" id="f_org_easybi_model_Log_minMoment" required="true" z="X7VtddP3f2fNuoh+u/gNDhD3WgU="/>
+        <field:datetime dateTimePattern="${log_moment_date_format}" disableFormBinding="true" field="maxMoment" id="f_org_easybi_model_Log_maxMoment" required="true" z="N05brZFO9JZiDikIrFu7Wcafqs8="/>
+    </form:find>
+</div>

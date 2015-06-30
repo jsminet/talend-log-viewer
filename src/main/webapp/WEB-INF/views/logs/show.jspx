@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show create="false" id="ps_org_easybi_model_Log" object="${log}" path="/logs" update="false" z="8TP5LbQcxthoe9VvxoyakBm9Naw=">
+        <field:display field="project" id="s_org_easybi_model_Log_project" object="${log}" z="fjDTFrFFB5aENc/SUZO8d11QPew="/>
+        <field:display field="job" id="s_org_easybi_model_Log_job" object="${log}" z="ovPRNk6fpOvy1rc/p71fYOLOtaU="/>
+        <field:display field="context" id="s_org_easybi_model_Log_context" object="${log}" z="WGCAHGX7JgmscM/PZnkYhRvMEa4="/>
+        <field:display field="priority" id="s_org_easybi_model_Log_priority" object="${log}" z="XPxb3UcDGJOwLtKF/PNwecl7ybo="/>
+        <field:display field="type" id="s_org_easybi_model_Log_type" object="${log}" z="pDUeGe4Qf3eGcSU3nNZd+vD3Z8k="/>
+        <field:display field="origin" id="s_org_easybi_model_Log_origin" object="${log}" z="YALqqj/DESiEWGlUdAXcGN7np5E="/>
+        <field:display field="message" id="s_org_easybi_model_Log_message" object="${log}" z="vXTzriaID4jvjVyal0FhESEr9ak="/>
+        <field:display field="code" id="s_org_easybi_model_Log_code" object="${log}" z="s977SgNiWJ/bLN7MnyEpjdGKERg="/>
+        <field:display date="true" dateTimePattern="${log_moment_date_format}" field="moment" id="s_org_easybi_model_Log_moment" object="${log}" z="jPcLRuqVUXV5QYrzrmRuW37yY7s="/>
+        <field:display field="pid" id="s_org_easybi_model_Log_pid" object="${log}" z="13UtXiA5czu2czjl9G0mgrTUG2Y="/>
+        <field:display field="root_pid" id="s_org_easybi_model_Log_root_pid" object="${log}" z="adzWPu7+pf18wVnlX+PW2lcaDQE="/>
+        <field:display field="father_pid" id="s_org_easybi_model_Log_father_pid" object="${log}" z="xXYu09+Zbq/mxgtqA2LMxr7ASKc="/>
+    </page:show>
+</div>

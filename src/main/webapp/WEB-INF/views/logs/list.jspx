@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_easybi_model_Log" items="${logs}" z="LqypRnYffudo0zuZK+yYHblJukU=">
+        <table:table data="${logs}" id="l_org_easybi_model_Log" path="/logs" update="false" z="6jPJ0KaZX09e1GVusgo34XikW24=">
+            <table:column id="c_org_easybi_model_Log_project" property="project" z="MS+JxzBbYJfxIO99QJ2Fu5tPpn0="/>
+            <table:column id="c_org_easybi_model_Log_job" property="job" z="QwV24eHkKaVzdEIqx1EVy/aB24k="/>
+            <table:column id="c_org_easybi_model_Log_context" property="context" z="x1kiqaVV/22zPoAK3oH83FO6smU="/>
+            <table:column id="c_org_easybi_model_Log_priority" property="priority" z="g6d/ZcX+xZ52P+Sn9DL3UA/ktlE="/>
+            <table:column id="c_org_easybi_model_Log_type" property="type" z="XaUMg09l1Wa9SV8Wx+TftVuIFuM="/>
+            <table:column id="c_org_easybi_model_Log_origin" property="origin" z="lOxA9L1t8ZsW6a4JE51eA8x0STs="/>
+        </table:table>
+    </page:list>
+</div>

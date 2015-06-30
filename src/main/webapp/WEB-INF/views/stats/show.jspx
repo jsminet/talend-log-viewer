@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show create="false" id="ps_org_easybi_model_Stat" object="${stat}" path="/stats" update="false" z="APXfDSqRvdGOmMB9pJ0v5GXMrvI=">
+        <field:display field="project" id="s_org_easybi_model_Stat_project" object="${stat}" z="Kf5HHV2a9oqld6JSVkIbUsf28qc="/>
+        <field:display field="job" id="s_org_easybi_model_Stat_job" object="${stat}" z="GwsYx9lugoHnxp8hd2cXxdqRt5A="/>
+        <field:display field="job_version" id="s_org_easybi_model_Stat_job_version" object="${stat}" z="irA709xYhuVSxtSDxDQCc+kj15Y="/>
+        <field:display field="context" id="s_org_easybi_model_Stat_context" object="${stat}" z="/NmOiv06f2awkY/DwvQUAoHz68M="/>
+        <field:display field="origin" id="s_org_easybi_model_Stat_origin" object="${stat}" z="DQGLbzptCAPBs+GPNx0z8xXngSI="/>
+        <field:display field="message_type" id="s_org_easybi_model_Stat_message_type" object="${stat}" z="fYn5GgbyZjHeCjI/BJ5R16IQgBU="/>
+        <field:display field="message" id="s_org_easybi_model_Stat_message" object="${stat}" z="hCe3qwLxhbDZxVD/ORomDVLHP9E="/>
+        <field:display field="duration" id="s_org_easybi_model_Stat_duration" object="${stat}" z="9UAYccnCR75ybADqn2CBnESMObg="/>
+        <field:display date="true" dateTimePattern="${stat_moment_date_format}" field="moment" id="s_org_easybi_model_Stat_moment" object="${stat}" z="cD3hvlf3rTJhgkGqvRaQ2GMMij8="/>
+        <field:display field="pid" id="s_org_easybi_model_Stat_pid" object="${stat}" z="P6VQjplwu9TmfR+BAti6/QNrAZs="/>
+        <field:display field="father_pid" id="s_org_easybi_model_Stat_father_pid" object="${stat}" z="UaTV6IUkZlRpiR2clYzuira08rI="/>
+        <field:display field="root_pid" id="s_org_easybi_model_Stat_root_pid" object="${stat}" z="DSeR1DysYSanAm7tguMSFuL55LI="/>
+        <field:display field="system_pid" id="s_org_easybi_model_Stat_system_pid" object="${stat}" z="KmPYVELMJa9l1Ka5wkbp+a6ZZNM="/>
+        <field:display field="job_repository_id" id="s_org_easybi_model_Stat_job_repository_id" object="${stat}" z="tasfEb8XUe1Iak0G85+8rCheU4s="/>
+    </page:show>
+</div>

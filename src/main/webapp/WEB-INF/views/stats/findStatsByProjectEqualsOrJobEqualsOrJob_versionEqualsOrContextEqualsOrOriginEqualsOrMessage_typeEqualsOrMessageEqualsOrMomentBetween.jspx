@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByProjectEqualsOrJobEqualsOrJob_versionEqualsOrContextEqualsOrOriginEqualsOrMessage_typeEqualsOrMessageEqualsOrMomentBetween" id="ff_org_easybi_model_Stat" path="/stats" z="hpUWzXAhgx/1pP2rSZVJuX+CTW8=">
+        <field:input disableFormBinding="true" field="project" id="f_org_easybi_model_Stat_project" max="50" required="true" z="csXszoORh81Imx6CDwivBAReXOE="/>
+        <field:input disableFormBinding="true" field="job" id="f_org_easybi_model_Stat_job" max="255" required="true" z="ONEP9VQ4nAPPfjiscbRFIcLuyR4="/>
+        <field:input disableFormBinding="true" field="job_version" id="f_org_easybi_model_Stat_job_version" max="255" required="true" z="2783ZoaeioEbx5KNdAVGOJgkEgY="/>
+        <field:input disableFormBinding="true" field="context" id="f_org_easybi_model_Stat_context" max="50" required="true" z="qU3ZoBqJ+C9aHEFKoBZUtgAYp1A="/>
+        <field:input disableFormBinding="true" field="origin" id="f_org_easybi_model_Stat_origin" max="255" required="true" z="IebOlBYbe2QIamjAmGUCSClyt1M="/>
+        <field:input disableFormBinding="true" field="message_type" id="f_org_easybi_model_Stat_message_type" max="255" required="true" z="+s3B/O40eQoR4YVnLdGebPfcJU0="/>
+        <field:input disableFormBinding="true" field="message" id="f_org_easybi_model_Stat_message" max="255" required="true" z="BC0pU4AaPeCP9JJNdNL6DFRezvA="/>
+        <field:datetime dateTimePattern="${stat_moment_date_format}" disableFormBinding="true" field="minMoment" id="f_org_easybi_model_Stat_minMoment" required="true" z="ppRcRYznTSL4PHzMKSk2TT8+vws="/>
+        <field:datetime dateTimePattern="${stat_moment_date_format}" disableFormBinding="true" field="maxMoment" id="f_org_easybi_model_Stat_maxMoment" required="true" z="dLBN7vdcc0D6tsw0zviHqxcWyOU="/>
+    </form:find>
+</div>

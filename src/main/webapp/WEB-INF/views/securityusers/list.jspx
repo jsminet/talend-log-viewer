@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_easybi_security_SecurityUser" items="${securityusers}" z="5l71ppuhGe+M7NsHJoLFZge2qBo=">
+        <table:table data="${securityusers}" id="l_org_easybi_security_SecurityUser" path="/securityusers" z="KIDJdPX3avZKMo14c6K8L2ucRpE=">
+            <table:column id="c_org_easybi_security_SecurityUser_username" property="username" z="uYPGbP3sKiTqqpmiRpNgEouyFAA="/>
+            <table:column id="c_org_easybi_security_SecurityUser_password" property="password" z="GE7qP8+WKUiz1tuetD12GCFE52M="/>
+            <table:column id="c_org_easybi_security_SecurityUser_authority" property="authority" z="CHqWJVO3F13K4WY0n0z/3FMWQN8="/>
+            <table:column id="c_org_easybi_security_SecurityUser_enabled" property="enabled" z="yyoi9tfgUgbBQSXgGnVyM9vfHVI="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="stats/list">
+        <put-attribute name="body" value="/WEB-INF/views/stats/list.jspx"/>
+    </definition>
+<definition extends="default" name="stats/show">
+        <put-attribute name="body" value="/WEB-INF/views/stats/show.jspx"/>
+    </definition>
+<definition extends="default" name="stats/findStatsByProjectEqualsOrJobEqualsOrJob_versionEqualsOrContextEqualsOrOriginEqualsOrMessage_typeEqualsOrMessageEqualsOrMomentBetween">
+        <put-attribute name="body" value="/WEB-INF/views/stats/findStatsByProjectEqualsOrJobEqualsOrJob_versionEqualsOrContextEqualsOrOriginEqualsOrMessage_typeEqualsOrMessageEqualsOrMomentBetween.jspx"/>
+    </definition>
+</tiles-definitions>

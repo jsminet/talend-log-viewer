@@ -1,0 +1,80 @@
+project --topLevelPackage org.easybi --projectName talend-log-viewer --java 7 --packaging WAR
+jpa setup --database MYSQL --provider HIBERNATE --userName root --password root --databaseName test
+
+entity jpa --class ~.model.Flow --testAutomatically
+field string --fieldName project --sizeMax 50
+field string --fieldName job --sizeMax 255  
+field string --fieldName job_version --sizeMax 255  
+field string --fieldName context --sizeMax 50  
+field string --fieldName origin --sizeMax 255  
+field string --fieldName label --sizeMax 255  
+field number --fieldName count --type java.lang.Integer --permitReservedWords true
+field number --fieldName reference --type java.lang.Integer
+field date --fieldName moment --notNull --type java.util.Date --dateTimeFormatPattern "dd-MM-yyyy hh:mm:ss a"
+field string --fieldName pid --sizeMax 20 
+field string --fieldName father_pid --sizeMax 20
+field string --fieldName root_pid --sizeMax 20
+field number --fieldName system_pid --type java.math.BigInteger
+field string --fieldName job_repository_id --sizeMax 255
+field string --fieldName thresholds --sizeMax 255 
+
+finder add --finderName findFlowsByProjectEqualsOrJobEqualsOrJob_versionEqualsOrContextEqualsOrOriginEqualsOrLabelLikeOrMomentBetween
+
+entity jpa --class ~.model.Log --testAutomatically
+field string --fieldName project --sizeMax 50
+field string --fieldName job --sizeMax 255
+field string --fieldName context --sizeMax 50  
+field number --fieldName priority --type java.lang.Integer 
+field string --fieldName type --sizeMax 255  
+field string --fieldName origin --sizeMax 255  
+field string --fieldName message --sizeMax 255
+field number --fieldName code --type java.lang.Integer 
+field date --fieldName moment --notNull --type java.util.Date --dateTimeFormatPattern "dd-MM-yyyy hh:mm:ss a"
+field string --fieldName pid --sizeMax 20 
+field string --fieldName root_pid --sizeMax 20
+field string --fieldName father_pid --sizeMax 20
+
+finder add --finderName findLogsByProjectEqualsOrJobEqualsOrContextEqualsOrOriginEqualsOrMessageEqualsOrCodeEqualsOrTypeEqualsOrPriorityEqualsOrMomentBetween
+
+entity jpa --class ~.model.Stat --testAutomatically
+field string --fieldName project --sizeMax 50
+field string --fieldName job --sizeMax 255  
+field string --fieldName job_version --sizeMax 255  
+field string --fieldName context --sizeMax 50  
+field string --fieldName origin --sizeMax 255  
+field string --fieldName message_type --sizeMax 255  
+field string --fieldName message --sizeMax 255  
+field number --fieldName duration  --type java.math.BigInteger
+field date --fieldName moment --notNull --type java.util.Date --dateTimeFormatPattern "dd-MM-yyyy hh:mm:ss a"
+field string --fieldName pid --sizeMax 20 
+field string --fieldName father_pid --sizeMax 20
+field string --fieldName root_pid --sizeMax 20
+field number --fieldName system_pid --type java.math.BigInteger
+field string --fieldName job_repository_id --sizeMax 255
+
+finder add --finderName findStatsByProjectEqualsOrJobEqualsOrJob_versionEqualsOrContextEqualsOrOriginEqualsOrMessage_typeEqualsOrMessageEqualsOrMomentBetween
+
+// For security part
+enum type --class ~.security.Authority
+enum constant --name ROLE_ADMIN 
+enum constant --name ROLE_USER
+entity jpa --class ~.security.SecurityUser --testAutomatically
+field string  --fieldName username --notNull --sizeMax 50 --sizeMin 3
+field string  --fieldName password --notNull --sizeMin 3
+field enum --type ~.security.Authority --fieldName authority
+field boolean --fieldName enabled
+
+web mvc setup 
+
+// Creation and deletion disabled for all models
+web mvc scaffold --class ~.model.FlowController --backingType ~.model.Flow --disallowedOperations create,update
+web mvc scaffold --class ~.model.LogController --backingType ~.model.Log --disallowedOperations create,update
+web mvc scaffold --class ~.model.StatController --backingType ~.model.Stat --disallowedOperations create,update
+web mvc scaffold --class ~.security.SecurityUserController --backingType ~.security.SecurityUser
+
+web mvc finder all
+web mvc language --code de
+security setup
+logging setup --level INFO
+perform package
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show create="false" id="ps_org_easybi_model_Flow" object="${flow}" path="/flows" update="false" z="84B9esoJCAwy0oJzQ1SLIMeDI1E=">
+        <field:display field="project" id="s_org_easybi_model_Flow_project" object="${flow}" z="/TJMF+tvb5PlmoHArNTLSL7rJf0="/>
+        <field:display field="job" id="s_org_easybi_model_Flow_job" object="${flow}" z="0IqQItFgiOHHCD/asvttOJBu9kE="/>
+        <field:display field="job_version" id="s_org_easybi_model_Flow_job_version" object="${flow}" z="mll2RphllmGHLQaI5RcEHnYef9w="/>
+        <field:display field="context" id="s_org_easybi_model_Flow_context" object="${flow}" z="wYxeECcaOU4tBolkgTkqKeljFTM="/>
+        <field:display field="origin" id="s_org_easybi_model_Flow_origin" object="${flow}" z="MI/Fz6qX5DGntFu/L4o9YIGfPZE="/>
+        <field:display field="label" id="s_org_easybi_model_Flow_label" object="${flow}" z="9OmLu5NkiS7GVGxGK87/QF3ynl4="/>
+        <field:display field="count" id="s_org_easybi_model_Flow_count" object="${flow}" z="l+4rCEDjK1oVUVvK1ATKxddv/4Q="/>
+        <field:display field="reference" id="s_org_easybi_model_Flow_reference" object="${flow}" z="/4z70IvbxE2rmCBi+pgH6/6xcJ4="/>
+        <field:display date="true" dateTimePattern="${flow_moment_date_format}" field="moment" id="s_org_easybi_model_Flow_moment" object="${flow}" z="PqKG30+/7TnzMawMSeztAqzkFII="/>
+        <field:display field="pid" id="s_org_easybi_model_Flow_pid" object="${flow}" z="Ge/SVMT5TdV7cf60yM+Qv2nglNA="/>
+        <field:display field="father_pid" id="s_org_easybi_model_Flow_father_pid" object="${flow}" z="D6cHWuHG7LLXlsVAnmbixBWiBBs="/>
+        <field:display field="root_pid" id="s_org_easybi_model_Flow_root_pid" object="${flow}" z="mr4ceQflWK2DwsfPpzldJnwiSdQ="/>
+        <field:display field="system_pid" id="s_org_easybi_model_Flow_system_pid" object="${flow}" z="ckBmz3jzVA1HLJnb9ft70Tp5u1c="/>
+        <field:display field="job_repository_id" id="s_org_easybi_model_Flow_job_repository_id" object="${flow}" z="2lb1/sLwAaLEpw6TVjm8slM4Hbg="/>
+        <field:display field="thresholds" id="s_org_easybi_model_Flow_thresholds" object="${flow}" z="qsJZ93KHxnDXamc2env0xPX+LDM="/>
+    </page:show>
+</div>

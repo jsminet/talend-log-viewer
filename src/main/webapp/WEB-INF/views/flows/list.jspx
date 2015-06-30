@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_easybi_model_Flow" items="${flows}" z="TYgxYrRQT8dshCheJ4JVaMx4LDg=">
+        <table:table data="${flows}" id="l_org_easybi_model_Flow" path="/flows" update="false" z="AnGOOvfaV7xDJgQy5BXCf5O5nA4=">
+            <table:column id="c_org_easybi_model_Flow_project" property="project" z="5ulNx0ItzVnYM9ySfF+eN5u5hMM="/>
+            <table:column id="c_org_easybi_model_Flow_job" property="job" z="4nPdn3YWTYdr+3elqcI76KsIbBs="/>
+            <table:column id="c_org_easybi_model_Flow_job_version" property="job_version" z="+sYXbLR70sDfNdjuO9SPCwSldHA="/>
+            <table:column id="c_org_easybi_model_Flow_context" property="context" z="QqSjWTEZJJiVgvosgAvTxtLgGMg="/>
+            <table:column id="c_org_easybi_model_Flow_origin" property="origin" z="ZxCtizAZO39t9GiDzKInY82Y6UA="/>
+            <table:column id="c_org_easybi_model_Flow_label" property="label" z="BSDM5POVO0uXDbMd4u8WOFZoo8o="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" xmlns:security="http://www.springframework.org/security/tags" xmlns:spring="http://www.springframework.org/tags" id="menu" version="2.0">
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+	<menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+		<security:authorize ifAnyGranted="ROLE_ADMIN,0">
+			<p>
+				<spring:message code="admin_mode" />
+			</p>
+			<menu:category id="c_securityuser" z="1pA19FMED3C0pUvmmaw7ukFjKtU=">
+				<menu:item id="i_securityuser_new" messageCode="global_menu_new"
+					url="/securityusers?form" z="5kN30Jm+I8iYxnGZR7Hbw5IigPs=" />
+				<menu:item id="i_securityuser_list" messageCode="global_menu_list"
+					url="/securityusers?page=1&amp;size=${empty param.size ? 10 : param.size}"
+					z="ctjCUKeAce9vsdM8LLaHxU2+ZqM=" />
+			</menu:category>
+		</security:authorize>
+		<menu:category id="c_flow" z="O2lAQi9OJmWHAsY/EGceFWFGtfI=">
+			<menu:item id="i_flow_list" messageCode="global_menu_list"
+				url="/flows?page=1&amp;size=${empty param.size ? 10 : param.size}"
+				z="xdvq4OvWb26P14/nDJ/ug9n3Jh0=" />
+			<menu:item
+				id="fi_flow_projectequalsorjobequalsorjob_versionequalsorcontextequalsororiginequalsorlabellikeormomentbetween"
+				messageCode="global_menu_find"
+				url="/flows?find=ByProjectEqualsOrJobEqualsOrJob_versionEqualsOrContextEqualsOrOriginEqualsOrLabelLikeOrMomentBetween&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}"
+				z="xCf1SPp3hVg41iDpYcWekivrH7Q=" />
+		</menu:category>
+		<menu:category id="c_log" z="NANAiU9cS9AizfTKwvi0sMwZTQc=">
+			<menu:item id="i_log_list" messageCode="global_menu_list"
+				url="/logs?page=1&amp;size=${empty param.size ? 10 : param.size}"
+				z="2QFxTPnngM2feC7xmBsTqR6eRT0=" />
+			<menu:item
+				id="fi_log_projectequalsorjobequalsorcontextequalsororiginequalsormessageequalsorcodeequalsortypeequalsorpriorityequalsormomentbetween"
+				messageCode="global_menu_find"
+				url="/logs?find=ByProjectEqualsOrJobEqualsOrContextEqualsOrOriginEqualsOrMessageEqualsOrCodeEqualsOrTypeEqualsOrPriorityEqualsOrMomentBetween&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}"
+				z="+KpzzEWtYZyNeYj10BFcmFpOB3I=" />
+		</menu:category>
+		<menu:category id="c_stat" z="RjmVSCGED9Ljry2Ppfa/Bacr4RI=">
+			<menu:item id="i_stat_list" messageCode="global_menu_list"
+				url="/stats?page=1&amp;size=${empty param.size ? 10 : param.size}"
+				z="rSuAQKzgu/HVv7Z+A+tUom6yW5M=" />
+			<menu:item
+				id="fi_stat_projectequalsorjobequalsorjob_versionequalsorcontextequalsororiginequalsormessage_typeequalsormessageequalsormomentbetween"
+				messageCode="global_menu_find"
+				url="/stats?find=ByProjectEqualsOrJobEqualsOrJob_versionEqualsOrContextEqualsOrOriginEqualsOrMessage_typeEqualsOrMessageEqualsOrMomentBetween&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}"
+				z="HIQ3TSYwp7vca78oK2U5yZtnnro=" />
+		</menu:category>
+
+	</menu:menu>
+</div>

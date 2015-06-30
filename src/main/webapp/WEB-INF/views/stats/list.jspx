@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_easybi_model_Stat" items="${stats}" z="IMafqPIU1e1H0Lknui/G5je9qRc=">
+        <table:table data="${stats}" id="l_org_easybi_model_Stat" path="/stats" update="false" z="o1dGuOTrFd/pCwWnJeRoHUOFbCY=">
+            <table:column id="c_org_easybi_model_Stat_project" property="project" z="63SgK4hx1c1cZg1NbQiW2IfPFI4="/>
+            <table:column id="c_org_easybi_model_Stat_job" property="job" z="TpF+7e8fdmIbm2Ukxf5zRqMc9YY="/>
+            <table:column id="c_org_easybi_model_Stat_job_version" property="job_version" z="/iKwkqxqZa1UFurAk2iSWP9zKbg="/>
+            <table:column id="c_org_easybi_model_Stat_context" property="context" z="S7hMF8k4anTxHm4zFD990eage60="/>
+            <table:column id="c_org_easybi_model_Stat_origin" property="origin" z="fZvToaOtxZ3HHyz8H6fb9JAyZ3U="/>
+            <table:column id="c_org_easybi_model_Stat_message_type" property="message_type" z="XG51njilpWyeJvnNmRVEpyuBnb0="/>
+        </table:table>
+    </page:list>
+</div>
