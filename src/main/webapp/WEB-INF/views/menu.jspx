@@ -4,9 +4,9 @@
 	<jsp:output omit-xml-declaration="yes" />
 	<menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
 		<security:authorize ifAnyGranted="ROLE_ADMIN,0">
-			<p>
+			<b><a>
 				<spring:message code="admin_mode" />
-			</p>
+			</a></b>
 			<menu:category id="c_securityuser" z="1pA19FMED3C0pUvmmaw7ukFjKtU=">
 				<menu:item id="i_securityuser_new" messageCode="global_menu_new"
 					url="/securityusers?form" z="5kN30Jm+I8iYxnGZR7Hbw5IigPs=" />

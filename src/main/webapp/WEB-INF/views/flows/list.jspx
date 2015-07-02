@@ -10,6 +10,9 @@
             <table:column id="c_org_easybi_model_Flow_context" property="context" z="QqSjWTEZJJiVgvosgAvTxtLgGMg="/>
             <table:column id="c_org_easybi_model_Flow_origin" property="origin" z="ZxCtizAZO39t9GiDzKInY82Y6UA="/>
             <table:column id="c_org_easybi_model_Flow_label" property="label" z="BSDM5POVO0uXDbMd4u8WOFZoo8o="/>
+            
+            <table:column id="c_org_easybi_model_Flow_count" property="count" z="user_managed"/>
+            <table:column id="c_org_easybi_model_Flow_moment" property="moment" z="user_managed"/>
         </table:table>
     </page:list>
 </div>

@@ -16,9 +16,9 @@ body {
 }
 
 #wrapper {
-	width:800px;
+	width:1000px;
 	min-width: 800px;
-	max-width: 800px;
+	max-width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
 
@@ -41,7 +41,7 @@ body {
 	position:relative;
 	float:left;  	
 	left:0px;
-	width:220px;
+/* 	width:220px; */
 	margin-right:15px;
 }
 
@@ -65,7 +65,7 @@ body {
 
 #menu h2 {
 	color: #fff;
-	background: #648C1D;
+	background: #b4c401;
 	text-transform: uppercase;
 	font-weight:bold;
 	font-size: 12px;
@@ -79,7 +79,7 @@ body {
 }
 
 #menu a:hover {
-	color: #648C1D;
+	color: #b4c401;
 	background: #fff;
 }
 

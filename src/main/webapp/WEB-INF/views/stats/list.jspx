@@ -10,6 +10,11 @@
             <table:column id="c_org_easybi_model_Stat_context" property="context" z="S7hMF8k4anTxHm4zFD990eage60="/>
             <table:column id="c_org_easybi_model_Stat_origin" property="origin" z="fZvToaOtxZ3HHyz8H6fb9JAyZ3U="/>
             <table:column id="c_org_easybi_model_Stat_message_type" property="message_type" z="XG51njilpWyeJvnNmRVEpyuBnb0="/>
+            
+            <table:column id="c_org_easybi_model_Stat_message" property="message" z="user_managed"/>
+            <table:column id="c_org_easybi_model_Stat_duration" property="duration" z="user_managed"/>
+        	<table:column id="c_org_easybi_model_Stat_moment" property="moment" z="user_managed"/>
+        
         </table:table>
     </page:list>
 </div>

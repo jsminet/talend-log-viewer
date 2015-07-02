@@ -10,6 +10,9 @@
             <table:column id="c_org_easybi_model_Log_priority" property="priority" z="g6d/ZcX+xZ52P+Sn9DL3UA/ktlE="/>
             <table:column id="c_org_easybi_model_Log_type" property="type" z="XaUMg09l1Wa9SV8Wx+TftVuIFuM="/>
             <table:column id="c_org_easybi_model_Log_origin" property="origin" z="lOxA9L1t8ZsW6a4JE51eA8x0STs="/>
+        
+        	<table:column id="c_org_easybi_model_Log_message" property="message" z="user_managed"/>
+        	<table:column id="c_org_easybi_model_Log_moment" property="moment" z="user_managed"/>
         </table:table>
     </page:list>
 </div>
