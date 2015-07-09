@@ -10,3 +10,8 @@ branches:
     - master
 notifications:
   email: false
+deploy:
+provider: heroku
+api_key: 5e33963b-7c2b-4d9e-abd4-885b4e13009f
+app:
+  master: talend-log-viewer
